@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>.myDiv {
+  border: 5px outset rgb(0, 157, 255);
+  background-color: lightblue;    
+  text-align: center;</style>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
+  <title>My CV</title>
+  <script>
+    window.onload = function(){
+      var title = document.getElementById("title");
+      var op = 0.1;  // initial opacity
+      var timer = setInterval(function () {
+          if (op >= 1){
+              clearInterval(timer);
+          }
+          title.style.opacity = op;
+          title.style.filter = 'alpha(opacity=' + op * 100 + ")";
+          op += op * 0.1;
+      }, 10);
+    }
+  </script>
+ 
+  
+</head>
+<body>
+  <div id="header">
+    <div class="myDiv">
+    <h1 class="fade-in">FAVOUR OPARA
+      <h3 class="fade-in">Cybersecurity professional, Ethical Hacker, Cloud and Network infrastructure and Security.</h3>
+    </h1>
+  </div>
+  </div>
+  <div id="main-content">
+    <div id="container">
+    
+      <img class="fade-in" src="myPicture.jpg" width="10%" height="10%" class="small-image" alt="A small image">
+    </div>
+  
+    
+  <div id="cv content">
+  <h2 class="fade-in">Personal Information</h2>
+  <p>Name: FAVOUR OPARA</p>
+  <p>Address: Raufu williams Crescent Surulere, Lagos Nigeria</p>
+  <p>Phone: +2348073628119</p>
+  <p>Email: favouropara48@gmail.com</p>
+  <h2 class="fade-in">Education</h2>
+  <h3 class="fade-in">B.Eng, Mechanical Engineering.</h3>
+  <p>Landmark University.</p>
+  <p>Majored in Industrial and Production.</p>
+  <h2 class="fade-in">Working Experience</h2>
+  <p>Fidelity Bank PLC: Cyber Risk Analyst</p>
+  <p>Figil High School: IT and Network Administrator</p>
+  <p>Deltaafrik Engineering Limited: Engineering Risk Management.</p>
+  <p>Future Oilfield Service Limited: Technical Support Engineer</p>
+  <h2 class="fade-in">Overall Experience</h2>
+  <p></p>
+  <h3 class="fade-in">Ethical hacker and Cyber Risk Analyst</h3>
+  <p>I conduct Risk Assessments, Key Risk Indicators (KRI) and Vulnurability Assessment and Penetration Testing (VAPT) on Security Solutions like ThreatArmor, CrowdstrikeFalcon, InsightsVM Rapid 7, Checkpoint, FraudSniper, Lansweeper, Entrust, BeyondTrust, Appspider, Cloudflare and other relevant applications/firewall used as DMZ's, perimeter firewalls or Firewall monitoring softwares.
+  <P>I make sure organizations follow standardization, Governance and Security Policies adherence according to NDPR, 1SO 27001 and PCIDSS.</p>
+  <P>I conduct weekly Reports on assessments taken and Quarterly Reviews on recent assessments, including ISMS and BCMS which is on a monthly basis.</P>
+  <p>I conduct Cloud Infrastructure and network Risk assessment, liasing with departments like SOC, Governance, Network Security, Enterprise Servers and Storage and relevant stakeholders in producing information about certain applications run by the bank for purpose of these risk assessments.</p>
+    <h2>Skills</h2>
+  <ul>
+    <li>Network Administration and Security</li>
+    <li>Kali Linux and Windows OS</li>
+    <li>Azure Cloud Infrastructure (IaaS, PaaS, SaaS) and Cloud Security</li>
+    <li>MDATP, Microsoft Sentinel, Azure Devops</li>
+    <li>IAM and PAM</li>
+    <li>Penetration testing</li>
+    <li>HTML, CSS, JS and Python</li>
+    <li>Suricata</li>
+    <li>Splunk</li>
+    <li>Information gathering, Port scanning, packet sniffing, SEO Poisoning, SQL Injection, Cross-site Scripting and Database attacks</li>
+    <li>Technical reporting</li>
+    <li>Governance, Risk and Compliance</li>
+  </ul>
+  </div>
+</div>
+<div id="footer">
+  <p>Copyright ©2023 Favour Opara CV</p>
+</div>
+</body>
+</html>
